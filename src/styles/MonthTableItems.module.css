@@ -1,0 +1,44 @@
+.block {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.item {
+    color: white;
+    height: 13px;
+    font-size: 11px;
+}
+
+.item:nth-child(odd) {
+    background: rgba(211, 211, 209, 0.101);
+}
+
+.dateItem {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+}
+
+.amountItem {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+}
+
+.descriptionItem {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+}
+
+.buttonsItem {
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+}
+
+.buttonsItem img {
+    cursor: pointer;
+}

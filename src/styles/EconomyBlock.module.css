@@ -1,0 +1,33 @@
+.totalAmount {
+    font-size: 13px;
+    color: white
+}
+
+.totalIncome {
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+}
+
+.totalIncome:hover {
+    text-decoration: underline;
+}
+
+.positive {
+    color: rgb(137, 225, 134);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.negative {
+    color: rgb(165, 63, 63);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.line {
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,10 @@
+.monthTable {
+    display: flex;
+    width: 600px;
+    margin-top: 10px;
+    flex-direction: column;
+    padding: 5px;
+    background: rgb(161,161,161);
+    background: linear-gradient(127deg, rgba(161,161,161,1) 30%, rgba(189,177,172,1) 69%);  
+    border-radius: 3px;
+}

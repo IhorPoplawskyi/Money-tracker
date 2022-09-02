@@ -1,0 +1,53 @@
+.wrapper {
+    background-color: rgb(249, 248, 247);
+    padding: 4px;
+    min-width: 500px;
+    border: 1px solid grey;
+    border-bottom: 0px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.input {
+    height: 25px;
+    border: 0.5px solid grey;
+    outline: none;
+    color: grey;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 4px;
+}
+
+.selectInput {
+    height: 30.5px;
+    border: 0.5px solid grey;
+    outline: none;
+    color: grey;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 3px;
+    margin: px;
+}
+
+.input::placeholder {
+    color: grey;
+}
+
+.button {
+    color: grey;
+    height: 30.5px;
+    padding: 3px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: inherit;
+    border: 2px solid grey;
+}
+
+.button:hover {
+    background: rgb(228,75,15);
+    background: linear-gradient(127deg, rgba(228,75,15,1) 23%, rgba(196,0,255,1) 69%);
+    color: white;
+    border: 2px solid rgb(255, 4, 154);
+}

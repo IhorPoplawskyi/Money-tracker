@@ -1,0 +1,15 @@
+.block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+    height: 25px;
+    border: 2px solid white;
+    outline: none;
+    color: white;
+    background: inherit;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 4px;
+}

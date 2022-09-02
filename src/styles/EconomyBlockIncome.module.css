@@ -1,0 +1,50 @@
+.block {
+    display: flex;
+    justify-content: space-around;
+    width: 110px;
+}
+
+.title {
+    color: rgb(146, 200, 247);
+}
+
+.input {
+    background: inherit;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(146, 200, 247);
+    font-size: 12px;
+    height: 12px;
+}
+
+.incomes {
+    color: rgb(146, 200, 247);
+    font-size: 12px;
+    width: 85%;
+}
+
+.editBtn {
+    height: 14px;
+}
+
+.editBtn img {
+    display: flex;
+    cursor: pointer;
+}
+
+.editBtns {
+    width: 15%;
+}
+
+.incomeItem:nth-child(odd) {
+    background: rgba(211, 211, 209, 0.101);
+}
+
+.editBtn:nth-child(odd) {
+    background: rgba(211, 211, 209, 0.101);
+}
+
+.input:nth-child(odd) {
+    background: rgba(211, 211, 209, 0.101);
+}
