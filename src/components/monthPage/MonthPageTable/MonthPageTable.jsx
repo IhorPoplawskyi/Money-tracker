@@ -20,15 +20,20 @@ const MonthPageTable = () => {
     },[])
 
     if (month) {
-        expenses = expenses.filter(el => el.date.split('-')[1] === month)
-        income = income.filter(el => el.monthDate === month)
+      expenses = expenses.filter((el) => el.date.split("-")[1] === month);
+      income = income.filter((el) => el.monthDate === month);
     }
-    if (description === 'no filter') {}
-    else if (description) {expenses = expenses.filter(el => el.description === description)};
-    
-    if (amount === 'no filter') {} 
-    else if (amount === 'from bigger to lower') {expenses.sort((a,b) => b.amount - a.amount);} 
-    else if (amount === 'from lower to bigger') {expenses.sort((a,b) => a.amount - b.amount);}
+    if (description === "no filter") {
+    } else if (description) {
+      expenses = expenses.filter((el) => el.description === description);
+    }
+
+    if (amount === "no filter") {
+    } else if (amount === "from bigger to lower") {
+      expenses.sort((a, b) => b.amount - a.amount);
+    } else if (amount === "from lower to bigger") {
+      expenses.sort((a, b) => a.amount - b.amount);
+    }
 
     return (
         <div className={s.monthTable}>
