@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteExpenseAC } from "../../../../redux/trackerReducer";
 import s from '../../../../styles/MonthTableItems.module.css';
 import trash from '../../../../../src/trash.svg';
+import { deleteExpenseAC } from "../../../../redux/sliceTrackerReducer";
 
 const MonthTableItems = ({expenses}) => {
     const dispatch = useDispatch();

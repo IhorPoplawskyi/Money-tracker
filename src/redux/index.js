@@ -1,5 +1,6 @@
-import { combineReducers, createStore } from "redux";
-import trackerReducer from "./trackerReducer";
+import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers } from "redux";
+import sliceTrackerReducer from "./sliceTrackerReducer";
 
 function saveToLocalStorage(state) {
   try {
@@ -22,10 +23,13 @@ function loadFromLocalStorage() {
 }
 
 const rootReducer = combineReducers({
-  cash: trackerReducer,
+  cash: sliceTrackerReducer,
 });
 
-const store = createStore(rootReducer, loadFromLocalStorage());
+const store = configureStore({
+  reducer: rootReducer, 
+  preloadedState: loadFromLocalStorage(),
+});
 
 store.subscribe(() => saveToLocalStorage(store.getState()));
 

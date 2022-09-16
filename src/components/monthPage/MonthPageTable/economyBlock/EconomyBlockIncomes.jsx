@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
-import {editIncomeAC,updateIncomeAC,deleteIncomeAC} from "../../../../redux/trackerReducer";
 import edit from "../../../../../src/edit.svg";
 import trash from "../../../../../src/trash.svg";
+import { editIncomeAC, deleteIncomeAC, updateIncomeAC } from "../../../../redux/sliceTrackerReducer";
 import s from "../../../../styles/EconomyBlockIncome.module.css";
 
 const EconomyBlockIncomes = ({ income }) => {
@@ -15,7 +15,7 @@ const EconomyBlockIncomes = ({ income }) => {
         type="text"
         autoFocus={true}
         onBlur={() => toogleEdit(el.id)}
-        onChange={(e) => dispatch(updateIncomeAC(el.id, e.target.value))}
+        onChange={(e) => dispatch(updateIncomeAC([el.id, e.target.value]))}
         value={el.income}
       ></input>
     ) : (

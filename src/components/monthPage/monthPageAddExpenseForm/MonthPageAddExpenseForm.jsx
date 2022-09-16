@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addExpenseAC } from "../../../redux/trackerReducer";
+import { addExpenseAC } from "../../../redux/sliceTrackerReducer";
 import s from '../../../styles/MonthPageAddExpenseForm.module.css';
 
 const MonthPageAddExpenseForm = () => {

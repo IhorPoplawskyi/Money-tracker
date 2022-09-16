@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addIncomeAC } from "../../../redux/trackerReducer";
+import { addIncomeAC } from "../../../redux/sliceTrackerReducer";
 import s from '../../../styles/MonthPageIncomeForm.module.css';
 
 const MonthPageIncomeForm = () => {
