@@ -11,7 +11,13 @@ const SortBlock = ({sortByMonth, sortByAmount, sortByDescription}) => {
     <div className={s.block}>
       <select className={s.input} onChange={(e) => {sortByMonth(e.target.value)}} defaultValue={'Sort by month'}>
         <option disabled value='Sort by month'>Sort by month</option>
-        {months.map((el, index) => <option key={el} value={index < 10 ? '0' + (index +1) : index +''}>{el}</option>)}
+        {months.map((el, index) => {
+          index = index + 1;
+          return (
+            <option key={el} value={index < 10 ? '0' + index : index + ''}>{el}</option>
+          )
+        }
+        )}
       </select>
 
       <select className={s.input} onChange={(e) => {sortByAmount(e.target.value)}} defaultValue='Sort by amount'>
