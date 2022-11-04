@@ -11,7 +11,7 @@ const MonthPageIncomeForm = () => {
         e.preventDefault();
         const monthDate = new Date().getMonth() + 1;
         const newIncome = {
-            monthDate: monthDate < 10 ? '0' + monthDate : monthDate,
+            monthDate: monthDate < 10 ? '0' + monthDate : '' + monthDate,
             income: Number(income),
             isEditing: false,
             id: Date.now(),
